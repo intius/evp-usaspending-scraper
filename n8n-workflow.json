@@ -13,7 +13,7 @@
           ]
         }
       },
-      "id": "92026d4f-61c4-4e94-9b57-6057aa3def6a",
+      "id": "ac28b693-f0e2-4086-bcfb-05ac856246e3",
       "name": "Run every morning",
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
@@ -41,7 +41,7 @@
         "build": "latest",
         "authentication": "apifyApi"
       },
-      "id": "9d055576-4c15-4bc7-b890-20695b697b1d",
+      "id": "d8aa0848-08e8-4190-b24a-3b7367c6aefe",
       "name": "Run USAspending Federal Awards Scraper",
       "type": "@apify/n8n-nodes-apify.apify",
       "typeVersion": 1,
@@ -60,11 +60,11 @@
         "method": "POST",
         "url": "https://webhook.site/your-unique-url",
         "sendBody": true,
-        "contentType": "json",
-        "body": "={{ $json }}",
+        "specifyBody": "json",
+        "jsonBody": "={{ $json }}",
         "options": {}
       },
-      "id": "374db0fa-58be-4ed3-9099-6573442e5ae7",
+      "id": "aa6f77b1-16cd-416b-9c5a-c87aa5d5f798",
       "name": "Send results to webhook",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
